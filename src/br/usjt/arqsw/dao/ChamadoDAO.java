@@ -31,6 +31,7 @@ public class ChamadoDAO {
 		query.setParameter("fila", fila);
 		query.setParameter("status", Chamado.ABERTO);
 
+		@SuppressWarnings("unchecked")
 		List<Chamado> result = query.getResultList();
 		return result;
 	}
@@ -42,6 +43,7 @@ public class ChamadoDAO {
 		Query query = manager.createQuery(jpql);
 		query.setParameter("fila", fila);
 		
+		@SuppressWarnings("unchecked")
 		List<Chamado> result = query.getResultList();
 		return result;
 	}

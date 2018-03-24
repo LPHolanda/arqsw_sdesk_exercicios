@@ -90,29 +90,4 @@ public class ManterChamadosController {
 		
 		return "ChamadoListarExibir";
 	}
-	
-	
-	/*public String listarChamadosExibir(@Valid Fila fila, BindingResult result, Model model) {
-		try {
-			if (result.hasFieldErrors("id")) {
-				model.addAttribute("filas", listarFilas());
-				System.out.println("Deu erro " + result.toString());
-				return "ChamadoListar";
-				// return "redirect:listar_filas_exibir";
-			}
-			fila = filaService.carregar(fila.getId());
-			model.addAttribute("fila", fila);
-
-			// TODO Código para carregar os chamados
-			List<Chamado> chamados = chamadoService.listarChamados(fila);
-			model.addAttribute("chamados", chamados);
-
-			return "ChamadoListarExibir";
-
-		} catch (IOException e) {
-			e.printStackTrace();
-			return "Erro";
-		}
-	}*/
-
 }
