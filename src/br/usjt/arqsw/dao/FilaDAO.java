@@ -22,7 +22,6 @@ public class FilaDAO {
 	EntityManager manager;
 	
 	public FilaDAO() {
-		
 	}
 	
 	public FilaDAO(EntityManager manager) {
